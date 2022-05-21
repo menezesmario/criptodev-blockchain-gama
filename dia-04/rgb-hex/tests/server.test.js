@@ -1,21 +1,22 @@
 const { assert, expect } = require('chai')
 const request = require("request");
+const server =require('../server/server')
 
 
 describe("SERVER - RGB to Hex", () => {
 
-    const URL = "http://localhost:8080/rgbToHex?red=255&green=0&blue=0";
+  it("should return status 200", async () => {
+    const response = await request(server)
+    .uri('http://localhost:8080')
+    .get()
+    .expect(200)
+  });
 
-  it("status 200", () => {});
-
-  it("color in hex", () => {});
 });
   
 describe("SERVER - Hex to RGB", () => {
 
-    const URL = "http://localhost:8080/rgbToHex?red=255&green=0&blue=0";
 
-  it("status 200", () => {});
-
-  it("color in RGB", () => {});
+  it("should return status 200", () => {});
+  
 });
