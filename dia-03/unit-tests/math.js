@@ -5,3 +5,9 @@ const mul = (x, y) => x * y
 const mod = (x, y) => x % y
 
 module.exports = { sum, sub, div, mul, mod }
+
+class User {
+
+}
+
+module.exports = User
