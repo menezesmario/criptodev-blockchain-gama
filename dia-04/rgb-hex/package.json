@@ -2,9 +2,9 @@
   "name": "rgb-hex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests/**/*.test.js"
+    "start": "nodemon server/server.js",
+    "test": "mocha ./tests/**/*.test.js --timeout 10000"
   },
   "keywords": [],
   "author": "",
