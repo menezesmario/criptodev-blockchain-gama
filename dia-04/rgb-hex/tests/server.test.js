@@ -2,22 +2,20 @@ const { assert, expect } = require('chai')
 const request = require("request");
 
 
-describe("Color Converter server", () => {
+describe("SERVER - RGB to Hex", () => {
 
-    describe("RGB to Hex", () => {
+    const URL = "http://localhost:8080/rgbToHex?red=255&green=0&blue=0";
 
-      it("status 200", () => {});
+  it("status 200", () => {});
 
-      it("color in hex", () => {});
-    });
+  it("color in hex", () => {});
+});
   
-    describe("Hex to RGB", () => {
+describe("SERVER - Hex to RGB", () => {
 
-      it("status 200", () => {});
+    const URL = "http://localhost:8080/rgbToHex?red=255&green=0&blue=0";
 
-      it("color in RGB", () => {});
-    });
-  
-  });
+  it("status 200", () => {});
 
-
+  it("color in RGB", () => {});
+});
