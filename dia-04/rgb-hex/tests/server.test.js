@@ -3,14 +3,19 @@ const request = require("request");
 const server =require('../server/server')
 
 
+
+
 describe("SERVER - RGB to Hex", () => {
 
-  it("should return status 200", async () => {
-    const response = await request(server)
-    .uri('http://localhost:8080')
-    .get()
-    .expect(200)
+  const url = "http://localhost:8080/rgbToHex?r=255&g=0&b=0";
+
+  it("should return status 200", (ok) => {
+    request(url, (err, res, body) => {
+      expect(res.statusCode).to.equal(200);
+      ok()
+    })
   });
+  
 
 });
   
