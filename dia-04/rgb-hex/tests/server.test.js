@@ -17,9 +17,9 @@ describe("SERVER - RGB to Hex", () => {
 
 });
   
-describe("SERVER - Hex to RGB", () => {
+// describe("SERVER - Hex to RGB", () => {
 
 
-  it("should return status 200", () => {});
+//   it("should return status 200", () => {});
   
-});
+// });
